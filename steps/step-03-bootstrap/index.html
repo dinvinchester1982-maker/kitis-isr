@@ -4,43 +4,205 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Шаг 3 · Неделя на Bootstrap</title>
-<!-- TODO 1: скачай bootstrap.min.css в vendor/ и подключи ЛОКАЛЬНО:
-<link rel="stylesheet" href="vendor/bootstrap.min.css"> -->
-<!-- TODO 2: скопируй свой style.css из шага 2 и подключи ПОСЛЕ bootstrap:
-<link rel="stylesheet" href="style.css"> -->
+<link rel="stylesheet" href="vendor/bootstrap.min.css">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- TODO 3: шапка
+
 <nav class="navbar navbar-dark bg-dark">
   <div class="container-fluid">
     <span class="navbar-brand">КИТиС · Расписание</span>
   </div>
-</nav> -->
+</nav>
 
-<!-- TODO 4: навигация дней (пока статичные ссылки)
-<ul class="nav nav-pills">
-  <li class="nav-item"><a class="nav-link active" href="#">Пн</a></li>
-  … Вт–Сб …
-</ul> -->
+  <ul class="nav nav-pills">
+    <li class="nav-item"><a class="nav-link active" href="#">Пн</a></li>
+    <li class="nav-item"><a class="nav-link active" href="#">Вт</a></li>
+    <li class="nav-item"><a class="nav-link active" href="#">Ср</a></li>
+    <li class="nav-item"><a class="nav-link active" href="#">Чт</a></li>
+    <li class="nav-item"><a class="nav-link active" href="#">Пт</a></li>
+    <li class="nav-item"><a class="nav-link active" href="#">Сб</a></li>
+  </ul>
+
 
 <main class="container">
   <h1 class="my-3">ИСр24-1 · 16–22 ноября 2026</h1>
 
-  <!-- TODO 5: сетка недели
   <div class="row g-3">
     <div class="col-12 col-md-6 col-xl-4 day-card">
       <h2>Понедельник, 16 ноября</h2>
-      …карточки .lesson-card из шага 2 (Пн: «К» + 2 пары графдизайна)…
+<div class="lessons">
+    <div class="lesson-card" style="--subject-color:#c4b478">
+    <span class="lesson-num">К</span>
+    <div class="lesson-body">
+      <div class="lesson-subject">Разговоры о важном</div>
+      <div class="lesson-meta">08:30–09:00 · Шевченко П.С. · ауд. 203</div>
     </div>
-    …ещё 5 колонок Вт–Сб, данные — таблица в README…
-  </div> -->
+  </div>
+    <div class="lesson-card" style="--subject-color:#c478c2">
+    <span class="lesson-num">1</span>
+    <div class="lesson-body">
+      <div class="lesson-subject">Графический дизайн и мультимедиа</div>
+      <div class="lesson-meta">09:10–10:30 · Морылёв К.С. · ауд. 403</div>
+    </div>
+  </div>
+    <div class="lesson-card" style="--subject-color:#78b5c4">
+    <span class="lesson-num">2</span>
+    <div class="lesson-body">
+      <div class="lesson-subject">Графический дизайн и мультимедиа</div>
+      <div class="lesson-meta">10:40–12:00 · Морылёв К.С. · ауд. 403</div>
+    </div>
+  </div>
+</div>
+    </div>
+    <div class="col-12 col-md-6 col-xl-4 day-card">
+      <h2>Вторник, 17 ноября</h2>
+<div class="lessons">
+    <div class="lesson-card" style="--subject-color:#c4b478">
+    <span class="lesson-num">1</span>
+    <div class="lesson-body">
+      <div class="lesson-subject">Безопасность жизнедеятельности</div>
+      <div class="lesson-meta">08:30–10:00 · Котельников А.М.</div>
+    </div>
+  </div>
+    <div class="lesson-card" style="--subject-color:#c478c2">
+    <span class="lesson-num">2</span>
+    <div class="lesson-body">
+      <div class="lesson-subject">Безопасность жизнедеятельности</div>
+      <div class="lesson-meta">10:10–11:40 · Котельников А.М.</div>
+    </div>
+  </div>
+</div>
+    </div>
+    <div class="col-12 col-md-6 col-xl-4 day-card">
+      <h2>Среда, 18 ноября</h2>
+<div class="lessons">
+    <div class="lesson-card" style="--subject-color:#c4b478">
+    <span class="lesson-num">1</span>
+    <div class="lesson-body">
+      <div class="lesson-subject">Графический дизайн и мультимедиа</div>
+      <div class="lesson-meta">08:30–10:00 · Морылёв К.С. · ауд. 403</div>
+    </div>
+  </div>
+    <div class="lesson-card" style="--subject-color:#c478c2">
+    <span class="lesson-num">2</span>
+    <div class="lesson-body">
+      <div class="lesson-subject">Экономика отрасли</div>
+      <div class="lesson-meta">08:30–10:00 · Морылёв К.С. · ауд. 403</div>
+    </div>
+  </div>
+    <div class="lesson-card" style="--subject-color:#78b5c4">
+    <span class="lesson-num">3</span>
+    <div class="lesson-body">
+      <div class="lesson-subject">Физическая культура</div>
+      <div class="lesson-meta">08:30–10:00 · Морылёв К.С. · ауд. 403</div>
+    </div>
+  </div>
+</div>
+    </div>
+    <div class="col-12 col-md-6 col-xl-4 day-card">
+      <h2>Четверг, 19 ноября</h2>
+<div class="lessons">
+    <div class="lesson-card" style="--subject-color:#c4b478">
+    <span class="lesson-num">1</span>
+    <div class="lesson-body">
+      <div class="lesson-subject">Проектирование и разработка веб-приложений</div>
+      <div class="lesson-meta">08:30–10:00 · Громов Р.И. · Дистант</div>
+    </div>
+  </div>
+    <div class="lesson-card" style="--subject-color:#c478c2">
+    <span class="lesson-num">2</span>
+    <div class="lesson-body">
+      <div class="lesson-subject">Проектирование и разработка веб-приложений</div>
+      <div class="lesson-meta">10:10–11:40 · Громов Р.И. · Дистант</div>
+    </div>
+  </div>
+    <div class="lesson-card" style="--subject-color:#78b5c4">
+    <span class="lesson-num">3</span>
+    <div class="lesson-body">
+      <div class="lesson-subject">Проектирование и разработка веб-приложений</div>
+      <div class="lesson-meta">12:10–13:40 · Громов Р.И. · Дистант</div>
+    </div>
+  </div>
+</div>
+    </div>
+    <div class="col-12 col-md-6 col-xl-4 day-card">
+      <h2>Пятница, 20 ноября</h2>
+<div class="lessons">
+    <div class="lesson-card" style="--subject-color:#c4b478">
+    <span class="lesson-num">4</span>
+    <div class="lesson-body">
+      <div class="lesson-subject"> Проектирование и разработка веб-приложений </div>
+      <div class="lesson-meta">13:50–15:20 · Громов Р.И. · Дистант</div>
+    </div>
+  </div>
+    <div class="lesson-card" style="--subject-color:#c478c2">
+    <span class="lesson-num">5</span>
+    <div class="lesson-body">
+      <div class="lesson-subject"> Проектирование и разработка веб-приложений </div>
+      <div class="lesson-meta">15:30–17:00 · Громов Р.И. · Дистант</div>
+    </div>
+  </div>
+    <div class="lesson-card" style="--subject-color:#78b5c4">
+    <span class="lesson-num">6</span>
+    <div class="lesson-body">
+      <div class="lesson-subject"> Проектирование и разработка веб-приложений </div>
+      <div class="lesson-meta">17:10–18:40 · Громов Р.И. · Дистант</div>
+    </div>
+  </div>
+</div>
+    </div>
+    <div class="col-12 col-md-6 col-xl-4 day-card">
+      <h2>Суббота, 21 ноября</h2>
+<div class="lessons">
+    <div class="lesson-card" style="--subject-color:#c4b478">
+    <span class="lesson-num">-</span>
+    <div class="lesson-body">
+      <div class="lesson-subject">Выходной</div>
+      <div class="lesson-meta"></div>
+    </div>
+  </div>
+</div>
+    </div>
+  </div>
 
-  <!-- TODO 6: таблица звонков
   <table class="table">
     <thead><tr><th>Пара</th><th>Начало</th><th>Конец</th></tr></thead>
-    <tbody>…6 строк…</tbody>
-  </table> -->
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>08:30</td>
+        <td>10:00</td>
+      </tr>
+      <tbody>
+      <tr>
+        <td>2</td>
+        <td>10:10</td>
+        <td>11:40</td>
+      </tr>
+            <tr>
+        <td>3</td>
+        <td>12:10</td>
+        <td>13:40</td>
+      </tr>
+            <tr>
+        <td>4</td>
+        <td>13:50</td>
+        <td>15:20</td>
+      </tr>
+            <tr>
+        <td>5</td>
+        <td>15:30</td>
+        <td>17:00</td>
+      </tr>
+            <tr>
+        <td>6</td>
+        <td>17:10</td>
+        <td>18:40</td>
+      </tr>
+      
+  </table>
 </main>
 
 <footer class="container py-4">
